@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Botanical Serve — Login</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Welcome to Botanical Serve</h1>
+      <p class="tag">Join our green community — learn, protect, and restore endangered plants.</p>
+    </header>
+
+    <section class="card auth-card">
+      <h2>Get Started</h2>
+
+      <div class="tab-row">
+        <button id="tab-email" class="tab active">Email Login</button>
+        <button id="tab-phone" class="tab">Phone Login</button>
+      </div>
+
+      <div class="toggle-row">
+        <button id="mode-login" class="mode active">Login</button>
+        <button id="mode-signup" class="mode">Sign Up</button>
+      </div>
+
+      <form id="auth-form">
+        <label id="label-identifier">Email</label>
+        <input id="identifier" placeholder="your@email.com" />
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="••••••" />
+
+        <div class="error" id="auth-error"></div>
+
+        <button id="submit-btn" class="btn btn-primary">Login</button>
+      </form>
+
+      <p class="muted">By signing up you agree to help spread awareness and support conservation.</p>
+    </section>
+
+    <footer class="muted small">© Botanical Serve — Learn about endangered plants</footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
